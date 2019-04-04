@@ -1,6 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{66809696-B4B2-472C-B7C4-C62DB073122C}" SchemaVersion="94">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{66809696-B4B2-472C-B7C4-C62DB073122C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{66809696-B4B2-472C-B7C4-C62DB073122C}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="drone" ID="{81AAB5C2-5E3C-4F0F-9252-B892DEC8F1BD}" ShortID="375008239">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="28488.1875"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AF44B03-7860-41CA-9D1C-29D984EDF2DC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="drone" ID="{29132F85-0B30-43FD-8FA2-9C6DA2FE6D48}" ShortID="561792951">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="drone" ID="{380F79F4-50A0-4667-826F-2FFC85DD2367}" ShortID="1060864235">
+									<Language>SFX</Language>
+									<AudioFile>drone.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{F7C81CD5-5B41-4830-B322-79EEE6B01C32}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{F17B667E-CDFD-4FD2-848D-B7FF2CAEC8BD}">
+									<ClipList>
+										<MusicClip Name="drone" ID="{D6E2AEA0-FF60-475E-919E-F5D0B670BFF7}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="28488.1875"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="drone" ID="{380F79F4-50A0-4667-826F-2FFC85DD2367}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{ECD8F0AC-ADC7-4B83-9DDA-1EA1EDA693B0}"/>
+						<MusicCue Name="Exit Cue" ID="{D6206AE5-5721-4237-B1A9-305DC86145C1}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="28488.1875"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+				<MusicSegment Name="MIDI_Heartbeat" ID="{540D9E61-D576-42E2-A1F0-B864E6D4B0F2}" ShortID="696453318">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AF44B03-7860-41CA-9D1C-29D984EDF2DC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="MIDI_Heartbeat" ID="{59F85E3B-B74D-424F-9AE9-5E8BD51DDFF6}" ShortID="1004649628">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+								</Reference>
+							</ReferenceList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{04F11DCB-85E6-4410-851C-B27F076EDCCE}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{694062C8-3232-4AE7-8C41-FA98967D2040}">
+									<ClipList>
+										<MusicClipMidi Name="MIDI_Heartbeat" ID="{1A5DF777-D596-43EC-95F3-72884AA77808}" ShortID="177648023">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
+												<Property Name="MidiFileName" Type="string" Value="MIDI_Heartbeat.mid"/>
+											</PropertyList>
+										</MusicClipMidi>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{440CEF51-C517-4E2E-823E-5D1EC87B8A18}"/>
+						<MusicCue Name="Exit Cue" ID="{AD6610F9-F643-4BAC-8DCD-0C1874E31D41}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="2000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+				<MusicSegment Name="MIDI_Quarter" ID="{272F2C68-2A72-4336-BB33-AFD90F8320F7}" ShortID="958894590">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AF44B03-7860-41CA-9D1C-29D984EDF2DC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="MIDI_Quarter" ID="{545A4416-519B-4355-A057-CB6312157A9A}" ShortID="811376761">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+								</Reference>
+							</ReferenceList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{8729738C-3504-4619-8293-23183159FA76}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{550EB3D0-7490-494D-AF52-B93A8CE66C24}">
+									<ClipList>
+										<MusicClipMidi Name="MIDI_Quarter" ID="{BF9A1311-79D4-42FA-9A20-0F0B7359F6FD}" ShortID="620775609">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
+												<Property Name="MidiFileName" Type="string" Value="MIDI_Quarter.mid"/>
+											</PropertyList>
+										</MusicClipMidi>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{2FCC6FA3-D1E5-44C4-BEDE-6EC419EC185A}"/>
+						<MusicCue Name="Exit Cue" ID="{DC370943-F50B-4152-B30E-50BEB97F4E07}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="2000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

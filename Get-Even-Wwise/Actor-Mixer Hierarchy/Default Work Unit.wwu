@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{567BD7F8-D21B-4888-9EFE-EB2A059F3BD2}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{567BD7F8-D21B-4888-9EFE-EB2A059F3BD2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{567BD7F8-D21B-4888-9EFE-EB2A059F3BD2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="heartbeat" ID="{B1BF1C0B-DBC7-470C-BB8F-0E5769BB5584}" ShortID="384439820">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AF44B03-7860-41CA-9D1C-29D984EDF2DC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="heartbeat" ID="{D68C9BBB-03EB-4F2D-8EC1-6869F9013347}" ShortID="66808254">
+							<Language>SFX</Language>
+							<AudioFile>heartbeat.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="heartbeat" ID="{D68C9BBB-03EB-4F2D-8EC1-6869F9013347}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="tick" ID="{B16231B4-9035-466E-915F-6E22435D7B0C}" ShortID="982858931">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AF44B03-7860-41CA-9D1C-29D984EDF2DC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A7615ED8-AC6F-4816-994B-00FEDDE3B0B8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="tick" ID="{0CFEB4BD-FAD0-47F8-95C5-D31D6DC30313}" ShortID="594558191">
+							<Language>SFX</Language>
+							<AudioFile>tick.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="tick" ID="{0CFEB4BD-FAD0-47F8-95C5-D31D6DC30313}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
