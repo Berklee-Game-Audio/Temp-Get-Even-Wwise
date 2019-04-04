@@ -14,6 +14,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="heartbeat" ID="{D68C9BBB-03EB-4F2D-8EC1-6869F9013347}" ShortID="66808254">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.25837037037037"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>heartbeat.wav</AudioFile>
 						</AudioFileSource>
